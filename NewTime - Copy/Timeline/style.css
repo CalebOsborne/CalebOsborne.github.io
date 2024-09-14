@@ -1,0 +1,223 @@
+.task {
+    display: inline-block;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.task::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    width: 0;
+    height: 2px;
+    background-color: rgb(255, 0, 0);
+    transition: width 0.6s ease;
+}
+
+/* Apply the line-through effect with animation */
+.checked {
+    color: rgb(132, 130, 130); /* Change text color */
+}
+
+/* Animate the line appearing */
+.checked::after {
+    width: 100%; /* Line extends fully across */
+}
+
+#checklist {
+    color: rgb(0, 0, 0);
+}
+
+/* cutoff for previous css */
+
+@font-face {
+    font-family: starlord;
+    src: url(./fonts/Starlord.ttf);
+}
+
+@font-face {
+    font-family: assemble;
+    src: url(./fonts/assemble.ttf);
+}
+
+
+@font-face {
+    font-family: avengers;
+    src: url(./fonts/avengers.otf);
+}
+
+
+@font-face {
+    font-family: heroes;
+    src: url(./fonts/heroes.otf);
+}
+
+@font-face {
+    font-family: deadpool;
+    src: url(./fonts/deadpool.ttf);
+}
+
+
+body {
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: grey;
+}
+
+html, body {
+    margin: 0; /* Remove default margin */
+    height: 100%; /* Ensure body and html take full height */
+  }
+  
+  body {
+    background-image: url(./Image/bg60.jpg); /* Path to your background image */
+    background-size: cover; /* Scale the image to cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Fix the background image in place */
+  }
+
+  #chronm {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#move2 {
+    text-align: center;
+    padding-top: 50px;
+}
+
+#rel {
+    padding-top: 50px;
+    text-align: center;
+}
+
+
+#relm {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.note {
+    margin-top: -50px;
+    font-family: heroes;
+    font-size: 32pt;
+}
+
+h1 {
+    font-family: avengers;
+    padding-top: 20px;
+    letter-spacing: 2px;
+    font-size: 62px;
+    color: rgb(192, 0, 0);
+}
+
+.chron {
+    padding-top: 10px;
+    font-size: 50pt;
+
+}
+
+.check {
+    margin-bottom: -60px;
+}
+
+#checklist {
+    font-size: 20px;
+    font-family: starlord;
+    color: rgb(0, 0, 0);
+    padding-top: 30px;
+}
+
+.box {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid #ff0000;
+    background-color: white;
+    letter-spacing: 2px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.box:hover {
+    background-color: #800000;
+}
+
+.container {
+    font-family: deadpool;
+}
+
+ul {
+    list-style-type: none;
+    font-family: starlord;
+    padding-bottom: 80px;
+    margin-left: -50px;
+}
+
+
+.box {
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 10px;
+    border: 2px solid #ff0000;
+    background-color: #a3a3a3;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.box:hover {
+    background-color: rgb(101, 101, 101);
+}
+
+.container {
+    font-family: deadpool;
+}
+
+.background-image {
+    width: 300px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    background-image: url(''); /* Path to your image file */
+    background-size: cover; /* Scale the image to cover the element */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+  }
+
+
+.check {
+  display: flex;
+  flex-wrap: nowrap; /* Prevents wrapping */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.check li {
+    margin-right: -700px; /* Adjust as needed */
+  }
+
+  #title {
+    padding-top: 170px;
+  }
+
+  footer {
+   text-align: center;
+   padding-bottom: 40px;
+  }
+
+  .foot {
+    padding-top: 150px;
+    margin-bottom: -40px;
+  }
